@@ -26,12 +26,5 @@ module Api
         }
       }.to_json
     end
-
-    def users_ids
-      ids = User.pluck(:id)
-      render json: {
-        users_ids: ids
-      }.to_json
-    end
   end
 end
